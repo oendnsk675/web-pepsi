@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Encode-Sans-Wide';
+    src:url('../fonts/Encode-Sans-Wide/Encode-Sans-Wide.ttf.woff') format('woff'),
+        url('../fonts/Encode-Sans-Wide/Encode-Sans-Wide.ttf.svg#Encode-Sans-Wide') format('svg'),
+        url('../fonts/Encode-Sans-Wide/Encode-Sans-Wide.ttf.eot'),
+        url('../fonts/Encode-Sans-Wide/Encode-Sans-Wide.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir_nextregular';
+    src: url('../fonts/avenir_next_regular/avenirnext-regular-webfont.woff2') format('woff2'),
+         url('../fonts/avenir_next_regular/avenirnext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,286 @@
+html, body, h1, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode-Sans-Wide';
+}
+
+:root {
+    --primary: #000000;
+    --secondary: #0081c8;
+    --font-primary: 'Encode-Sans-Wide'; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.font-primary {
+    font-family: 'Encode-Sans-Wide';
+}
+
+.font-secondary {
+    font-family: 'Encode-Sans-Wide';
+}
+
+.bg-primary {
+    background-color: #000000;
+}
+
+.bg-secondary {
+    background-color: #0081c8;
+}
+
+.navbar {
+    position: sticky;
+    z-index: 99999;
+    background: #000;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: large;
+    overflow-x: hidden;
+}
+
+.navbar .sosmed-container {
+    position: absolute;
+    left: 3.4rem;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.navbar .sosmed-container a {
+    width: 0;
+}
+
+.navbar a {
+    width: 8rem;
+    text-align: center;
+}
+
+.navbar a:last-child {
+    margin-left: -3rem;
+}
+
+.hamburger-menu {
+    position: relative;
+    margin-left: 13px;
+}
+
+.hamburger-menu .menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu .menu input, .hamburger-menu .menu  svg {
+    position: absolute;
+}
+
+.hamburger-menu .menu input{
+    /* opacity: 0; */
+    /* z-index: 99999999; */
+    width: 25px;
+    height: 25px;
+}
+
+#nav-mobile-menu {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    display: none;
+    /* transform: translateY(-50rem); */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    font-weight: 700;
+}
+
+#openSidebarMenu:checked + .navbar {
+    background-color: red;
+}
+
+input#openSidebarMenu{
+    display: none;
+}
+
+/* navbar */
+
+.hero {
+    overflow-x: hidden;
+}
+
+.hero img {
+    width: 100%;
+}
+
+
+/* section product */
+
+.product {
+    display: flex;
+    color: white;
+}
+
+.product .product-item {
+    width: 33.333%;
+    user-select: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.bg-pepsi-max {
+    background: rgb(33,57,116);
+    background: linear-gradient(180deg,rgba(225,53,151,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.product-image {
+    margin-bottom: 2rem;
+}
+
+.bg-pepsi-original {
+    background: rgb(0,129,200);
+    background: linear-gradient(180deg, rgba(0,129,200,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.bg-pepsi-light {
+    background: rgb(216,216,216);
+    background: linear-gradient(180deg, rgba(216,216,216,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.product .title {
+    width: 40%;
+    height: 6rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.product .product-item a.link-product {
+    padding: 14px;
+    margin-top: 4rem;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 30px 0 30px 0;
+}
+/* section product */
+
+/* section vidio product */
+.vidio-product {
+    margin-top: 2rem;
+}
+
+/* section news */
+.news {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news h1 {
+    font-size: xx-large;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.news-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-items {
+    width: 25%;
+    height: 14.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-items .body-items {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: flex-start;
+    color: white;
+    font-size: smaller;
+    bottom: 0;
+    left: 0;
+    padding: 13px 8px;
+}
+
+.news-items .title {
+    margin-bottom: 16px;
+}
+/* section news */
+
+/* footer */
+footer {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .line-devider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer .line-devider hr {
+    width: 100%;
+}
+
+footer .sosmed-container {
+    display: flex;
+    gap: 2rem;
+}
+
+footer .other-menu {
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+.copy-right {
+    font-size: x-small;
+    color: white;
+}
+/* footer */
